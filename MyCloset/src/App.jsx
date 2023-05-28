@@ -6,15 +6,15 @@ import Userhome from './movePage/userhome.jsx'
 import Mypage from './movePage/mypage.jsx'
 import MainPage from './MainPage.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import MyCloset from './MyCloset.jsx';
 
 function App() {
 
   return (
     <div className="App">
-
       <BrowserRouter>
         <Routes>
-          <Route path={"/"} element={<MainPage />}></Route>
+          <Route path={"/"} element={<MyCloset />}></Route>
           <Route path={"/user/home"} element={<Userhome />}></Route>
           <Route path={"/user/mypage"} element={<Mypage />}></Route>
         </Routes>
