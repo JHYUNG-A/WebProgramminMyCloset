@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 function Navbar() {
-
+  const navigate = useNavigate();
   const initialState = [
     {
       id: 1,
@@ -41,10 +41,24 @@ function Navbar() {
       color: '#FF9BFF',
     },
   ];
+
+  const handleClick = (path) => {
+    navigate(path);
+  }
   
 
   return (
-    <div>Navbar</div>
+    <div>
+      {initialState.map((item) => (
+        <div 
+          key={item.id} 
+          style={{ cursor: 'pointer' }} 
+          onClick={() => handleClick(`/${item.value}`)}
+        >
+          {item.value}
+        </div>
+      ))}
+    </div>
   )
 }
 
