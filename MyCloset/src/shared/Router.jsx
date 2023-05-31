@@ -15,20 +15,6 @@ import ClothesDetail from '../pages/ClothesDetail'; // 내 옷 상세 페이지
 import WeatherRecommend from '../pages/WeatherRecommend'; // 날씨별 옷차림 추천 페이지
 import MyClothes from '../pages/MyClothes';
 
-// const Router = createBrowserRouter(
-//   createRoutesFromElements(
-//     <Route element={<Home />} errorElement={<NotFound />}>
-//       <Route path="/" element={<Home />} />
-//       <Route path="/top" element={<TopClothes />} /> 
-//       <Route path="/bottom" element={<BottomClothes />} /> 
-//       <Route path="/outer" element={<OuterClothes />} /> 
-//       <Route path="/ootd" element={<OOTD />} /> 
-//       <Route path="/about" element={<About />} /> 
-//       <Route path="/weather-recommend" element={<WeatherRecommend />} />
-//     </Route>,
-//   ),
-// );
-
 const Router = createBrowserRouter([
   {
     path: '/',
@@ -62,6 +48,10 @@ const Router = createBrowserRouter([
   {
     path: "/myclothes",
     element: <MyClothes />,
+  },
+  {
+    path: "/clothes/:id",
+    element: <ClothesDetail />,
   }
 ]);
 

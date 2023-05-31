@@ -1,7 +1,7 @@
 import React from 'react';
 
-function ClothesImage({ clothes }) {
-  return <img src={clothes.imageUrl} alt={clothes.name} />;
+function ClothesImage({ item }) {
+  return <img src={item.image} alt={item.name} />;
 }
 
 export default ClothesImage;

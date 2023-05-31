@@ -1,6 +1,7 @@
 // 김준하
 // 내 옷장 페이지
-import {useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar/Navbar'
 
 function MyClothes() {
@@ -31,14 +32,6 @@ function MyClothes() {
       [event.target.name]: event.target.value,
     });
   };
-
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   const clothes = JSON.parse(localStorage.getItem('clothes')) || [];
-  //   clothes.push(item);
-  //   localStorage.setItem('clothes', JSON.stringify(clothes));
-  //   alert('Item added!');
-  // };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -77,11 +70,13 @@ function MyClothes() {
       </form>
       <h1>My Clothes</h1>
       {currentClothes.map((clothe, index) => (
+        <Link to={`/clothes/${index}`} key={index}>
         <div key={index}>
           <img src={clothe.image} alt={clothe.name} />
           <h2>{clothe.name}</h2>
           <p>{clothe.price}</p>
-        </div>
+          </div>
+        </Link>
       ))}
       <button onClick={handlePrevious}>Previous</button>
       <button onClick={handleNext}>Next</button>

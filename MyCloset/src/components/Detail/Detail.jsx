@@ -1,13 +1,16 @@
 import React from 'react';
 
-function Detail({ clothes }) {
+function Detail({ item }) {
+  if (!item) {
+    return <div>Loading...</div>;
+  }
   return (
     <div>
-      <h2>{clothes.name}</h2>
-      <p>{clothes.type}</p>
-      <p>{clothes.purchaseDate}</p>
-      <p>{clothes.size}</p>
-      <p>{clothes.price}</p>
+      <h2>{item.name}</h2>
+      <p>{item.type}</p>
+      <p>{item.purchaseDate}</p>
+      <p>{item.size}</p>
+      <p>{item.price}</p>
     </div>
   );
 }
