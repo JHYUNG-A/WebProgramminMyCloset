@@ -6,7 +6,7 @@ function Weather() {
   const API_KEY = "63cc941e76617cbd7ef6415dffc51d5d";
   const [location, setLocation] = useState("");
   const [result, setResult] = useState("");
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}`;
 
   const searchWeather = async (e) => {
     if (e.key === "Enter") {

@@ -8,12 +8,14 @@ function MyClothes() {
 
   const [item, setItem] = useState({
     name: '',
-    type: '',
+    type: '', 
     purchaseDate: '',
     size: '',
     price: '',
     image: '',
-  });
+    minTemp: '', // 옷이 적합한 최저 기온
+    maxTemp: '', // 옷이 적합한 최고 기온
+});
 
   const [clothes, setClothes] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
