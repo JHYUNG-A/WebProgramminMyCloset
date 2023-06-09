@@ -31,7 +31,10 @@ function Home() {
             <Link to="ootd">OOTD</Link>
           </li>
           <li>
-            <Link to="about">브랜드 소개</Link>
+            <Link to="about">개발자 소개</Link>
+          </li>
+          <li>
+            <Link to="proposal">기획서</Link>
           </li>
         </ul>
       </nav>

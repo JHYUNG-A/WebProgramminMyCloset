@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { AppWrap, ResultWrap } from './Weather.style';
 
-function Weather() {
+function Weather({ onTemperatureChange }) {
   const API_KEY = "63cc941e76617cbd7ef6415dffc51d5d";
   const [location, setLocation] = useState("");
   const [result, setResult] = useState("");
@@ -17,6 +17,7 @@ function Weather() {
         });
         console.log(data);
         setResult(data.data);
+        onTemperatureChange(Math.round((data.data.main.temp-273.15) * 10) / 10); // 현재 기온 정보를 상위 컴포넌트로 전달
       } catch (err) {
         alert(err);
       }

@@ -14,6 +14,7 @@ import About from '../pages/About'; // 개발자 소개 페이지
 import ClothesDetail from '../pages/ClothesDetail'; // 내 옷 상세 페이지
 import WeatherRecommend from '../pages/WeatherRecommend'; // 날씨별 옷차림 추천 페이지
 import MyClothes from '../pages/MyClothes';
+import Proposal from '../pages/Proposal';
 
 const Router = createBrowserRouter([
   {
@@ -52,7 +53,11 @@ const Router = createBrowserRouter([
   {
     path: "/clothes/:id",
     element: <ClothesDetail />,
-  }
+  },
+  {
+    path: "/proposal",
+    element: <Proposal />,
+  },
 ]);
 
 export default Router;
