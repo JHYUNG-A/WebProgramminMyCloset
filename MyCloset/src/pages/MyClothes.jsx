@@ -54,7 +54,6 @@ function MyClothes() {
   const endIndex = startIndex + itemsPerPage;
   const currentClothes = clothes.slice(startIndex, endIndex);
 
-
   return (
     <div>
       <Navbar />

@@ -1,28 +1,59 @@
+// import styled from "styled-components";
+
+// export const AppWrap = styled.div`
+//   width: 100%;
+//   height: 100%;
+//   padding: 20px;
+  
+//   .appContentWrap {
+//     border: 5px solid black;
+//     padding: 20px;
+//     border-radius: 20px;
+//     align-items: center;
+//   }
+//   input {
+//     padding: 16px;
+//     border: 2px black solid;
+//     border-radius: 16px;
+//   }
+// `;
+
+// export const ResultWrap = styled.div`
+//   margin-top: 60px;
+//   padding: 10px;
+//   border: 1px black solid;
+//   border-radius: 8px;
+// `;
+
 import styled from "styled-components";
 
 export const AppWrap = styled.div`
   width: 100%;
   height: 100%;
-  border: 1px solid red;
-
+  padding: 20px;
+  
   .appContentWrap {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border: 1px solid blue;
+    display: flex; 
+    flex-direction: column; // 추가
+    justify-content: center; 
+    align-items: center; // 추가
+    border: 5px solid black;
     padding: 20px;
+    border-radius: 20px;
   }
   input {
     padding: 16px;
     border: 2px black solid;
     border-radius: 16px;
+    margin-bottom: 20px; // 추가: input과 결과 사이에 간격을 줍니다.
   }
 `;
 
 export const ResultWrap = styled.div`
-  margin-top: 60px;
+  margin-top: 10px;
   padding: 10px;
   border: 1px black solid;
   border-radius: 8px;
 `;
+
+
