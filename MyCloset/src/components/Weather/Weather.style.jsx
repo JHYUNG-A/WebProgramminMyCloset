@@ -1,30 +1,3 @@
-// import styled from "styled-components";
-
-// export const AppWrap = styled.div`
-//   width: 100%;
-//   height: 100%;
-//   padding: 20px;
-  
-//   .appContentWrap {
-//     border: 5px solid black;
-//     padding: 20px;
-//     border-radius: 20px;
-//     align-items: center;
-//   }
-//   input {
-//     padding: 16px;
-//     border: 2px black solid;
-//     border-radius: 16px;
-//   }
-// `;
-
-// export const ResultWrap = styled.div`
-//   margin-top: 60px;
-//   padding: 10px;
-//   border: 1px black solid;
-//   border-radius: 8px;
-// `;
-
 import styled from "styled-components";
 
 export const AppWrap = styled.div`
@@ -55,5 +28,3 @@ export const ResultWrap = styled.div`
   border: 1px black solid;
   border-radius: 8px;
 `;
-
-

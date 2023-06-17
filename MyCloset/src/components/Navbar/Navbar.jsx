@@ -62,7 +62,7 @@ function Navbar() {
   return (
     <NavbarContainer>
       {initialState.map((item) => (
-        <NavbarItem key={item.id} onClick={() => handleClick(`/${item.value}`)}>
+        <NavbarItem key={item.id} onClick={() => handleClick(item.value)}>
           {item.value}
         </NavbarItem>
       ))}
