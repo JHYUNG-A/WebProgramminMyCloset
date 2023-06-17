@@ -21,7 +21,6 @@ function MyClothes() {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8;
 
-
   useEffect(() => {
     const storedClothes = JSON.parse(localStorage.getItem('clothes')) || [];
     setClothes(storedClothes);
@@ -67,6 +66,8 @@ function MyClothes() {
         <input name="size" placeholder="Size" onChange={handleChange} />
         <input name="price" placeholder="Price" onChange={handleChange} />
         <input name="image" placeholder="Image URL" onChange={handleChange} />
+        <input name="minTemp" placeholder="최저기온" onChange={handleChange} />
+        <input name="maxTemp" placeholder="최고기온" onChange={handleChange} />
         <button type="submit">Add</button>
       </form>
       <h1>My Clothes</h1>
