@@ -58,7 +58,6 @@ function MyClothes() {
 
   return (
     <div>
-      <h1>MyClothes</h1>
       <Navbar />
       <h1>Add Clothes</h1>
       <form onSubmit={handleSubmit}>

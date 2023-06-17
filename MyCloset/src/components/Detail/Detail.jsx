@@ -1,17 +1,18 @@
 import React from 'react';
+import { DetailContainer, DetailTitle, DetailText } from './Detail.style';
 
 function Detail({ item }) {
   if (!item) {
     return <div>Loading...</div>;
   }
   return (
-    <div>
-      <h2>{item.name}</h2>
-      <p>{item.type}</p>
-      <p>{item.purchaseDate}</p>
-      <p>{item.size}</p>
-      <p>{item.price}</p>
-    </div>
+    <DetailContainer>
+      <DetailTitle>{item.name}</DetailTitle>
+      <DetailText>{item.type}</DetailText>
+      <DetailText>{item.purchaseDate}</DetailText>
+      <DetailText>{item.size}</DetailText>
+      <DetailText>{item.price}</DetailText>
+    </DetailContainer>
   );
 }
 
