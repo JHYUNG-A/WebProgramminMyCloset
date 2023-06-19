@@ -3,7 +3,7 @@ import { DeveloperContainer, DeveloperCard, DeveloperImage, DeveloperInfo, Devel
 import image1 from '../assets/안재형.png';
 import image2 from '../assets/김준하.png';
 import image3 from '../assets/김광민.png';
-
+import  Mainbar from '../components/Mainbar/Mainbar'
 
 function About() {
   const developers = [
@@ -30,7 +30,10 @@ function About() {
     },
   ];
 
-  return (
+  return ( 
+    <div>
+      <h1>Developer Introduction</h1>
+      <Mainbar />
     <DeveloperContainer>
       {developers.map((developer, index) => (
         <DeveloperCard key={index}>
@@ -44,6 +47,7 @@ function About() {
         </DeveloperCard>
       ))}
     </DeveloperContainer>
+    </div>
   )
 }
 

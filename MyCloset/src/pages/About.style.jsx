@@ -5,8 +5,8 @@ export const DeveloperContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
-`;
-
+  `;
+  
 export const DeveloperCard = styled.div`
   width: 300px;
   border: 1px solid #ddd;
@@ -14,6 +14,8 @@ export const DeveloperCard = styled.div`
   margin: 20px;
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+  
 `;
 
 export const DeveloperImage = styled.img`
@@ -21,6 +23,7 @@ export const DeveloperImage = styled.img`
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
+  
 `;
 
 export const DeveloperInfo = styled.div`
@@ -28,6 +31,7 @@ export const DeveloperInfo = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+  
 `;
 
 export const DeveloperName = styled.h2`
