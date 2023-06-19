@@ -27,7 +27,7 @@
 
 
 import React from 'react';
-import { RouterProvider } from 'react-router-dom';
+import { Route, RouterProvider } from 'react-router-dom';
 import Router from './shared/Router';
 
 function App() {

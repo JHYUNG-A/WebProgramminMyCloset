@@ -3,19 +3,20 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar/Navbar'
+import './MyClothes.css';
 
 function MyClothes() {
 
   const [item, setItem] = useState({
     name: '',
-    type: '', 
+    type: '',
     purchaseDate: '',
     size: '',
     price: '',
     image: '',
     minTemp: '', // 옷이 적합한 최저 기온
     maxTemp: '', // 옷이 적합한 최고 기온
-});
+  });
 
   const [clothes, setClothes] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -57,30 +58,34 @@ function MyClothes() {
   return (
     <div>
       <Navbar />
-      <h1>Add Clothes</h1>
-      <form onSubmit={handleSubmit}>
-        <input name="name" placeholder="Name" onChange={handleChange} />
-        <input name="type" placeholder="Type" onChange={handleChange} />
-        <input name="purchaseDate" placeholder="Purchase Date" onChange={handleChange} />
-        <input name="size" placeholder="Size" onChange={handleChange} />
-        <input name="price" placeholder="Price" onChange={handleChange} />
-        <input name="image" placeholder="Image URL" onChange={handleChange} />
-        <input name="minTemp" placeholder="최저기온" onChange={handleChange} />
-        <input name="maxTemp" placeholder="최고기온" onChange={handleChange} />
-        <button type="submit">Add</button>
-      </form>
       <h1>My Clothes</h1>
-      {currentClothes.map((clothe, index) => (
-        <Link to={`/clothes/${index}`} key={index}>
-        <div key={index}>
-          <img src={clothe.image} alt={clothe.name} />
-          <h2>{clothe.name}</h2>
-          <p>{clothe.price}</p>
-          </div>
-        </Link>
-      ))}
+      <div className='clothes-container'>
+        {currentClothes.map((clothe, index) => (
+          <Link to={`/clothes/${index}`} key={index}>
+            <div key={index}>
+              <img src={clothe.image} alt={clothe.name} />
+              <h2>{clothe.name}</h2>
+              <p>{clothe.price}</p>
+            </div>
+          </Link>
+        ))}
+      </div>
       <button onClick={handlePrevious}>Previous</button>
       <button onClick={handleNext}>Next</button>
+      <h1>Add Clothes</h1>
+      <div className='form-container'>
+        <form onSubmit={handleSubmit}>
+          <input className='input-field' name="name" placeholder="Name" onChange={handleChange} />
+          <input className='input-field' name="type" placeholder="Type" onChange={handleChange} />
+          <input className='input-field' name="purchaseDate" placeholder="Purchase Date" onChange={handleChange} />
+          <input className='input-field' name="size" placeholder="Size" onChange={handleChange} />
+          <input className='input-field' name="price" placeholder="Price" onChange={handleChange} />
+          <input className='input-field' name="image" placeholder="Image URL" onChange={handleChange} />
+          <input className='input-field' name="minTemp" placeholder="최저기온" onChange={handleChange} />
+          <input className='input-field' name="maxTemp" placeholder="최고기온" onChange={handleChange} />
+          <button className='submit-button' type="submit">Add</button>
+        </form>
+      </div>
     </div>
   )
 }
