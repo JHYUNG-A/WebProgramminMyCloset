@@ -9,7 +9,7 @@ function MyClothes() {
 
   const [item, setItem] = useState({
     name: '',
-    type: '',
+    type: 'top',  // 기본값을 top으로 설정
     purchaseDate: '',
     size: '',
     price: '',
@@ -58,7 +58,8 @@ function MyClothes() {
   return (
     <div>
       <h1>My Clothes</h1>
-      <Navbar />
+      <Navbar /><br/>
+      
       <div className='clothes-container'>
         {currentClothes.map((clothe, index) => (
           <Link to={`/clothes/${index}`} key={index}>
@@ -70,13 +71,20 @@ function MyClothes() {
           </Link>
         ))}
       </div>
-      <button onClick={handlePrevious}>Previous</button>
-      <button onClick={handleNext}>Next</button>
-      <h1>Add Clothes</h1>
+      <div className='button-container'>
+        <button onClick={handlePrevious}>Previous</button>
+        <button onClick={handleNext}>Next</button>
+      </div>
+
+      <h2>Add Clothes</h2>
       <div className='form-container'>
         <form onSubmit={handleSubmit}>
           <input className='input-field' name="name" placeholder="Name" onChange={handleChange} />
-          <input className='input-field' name="type" placeholder="Type" onChange={handleChange} />
+          <select className='input-field' name="type" value={item.type} onChange={handleChange}>
+            <option value="top">Top</option>
+            <option value="bottom">Bottom</option>
+            <option value="outer">Outer</option>
+          </select>
           <input className='input-field' name="purchaseDate" placeholder="Purchase Date" onChange={handleChange} />
           <input className='input-field' name="size" placeholder="Size" onChange={handleChange} />
           <input className='input-field' name="price" placeholder="Price" onChange={handleChange} />
