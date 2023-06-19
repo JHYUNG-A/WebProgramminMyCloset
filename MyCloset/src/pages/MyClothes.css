@@ -7,7 +7,7 @@
 .clothes-container img {
   width: 100%;
   height: auto;
-  object-fit: cover; // optional, if you want to maintain aspect ratio while covering the entire parent
+  object-fit: cover;
 }
 
 .form-container {

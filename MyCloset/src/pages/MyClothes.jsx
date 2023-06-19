@@ -57,8 +57,8 @@ function MyClothes() {
 
   return (
     <div>
-      <Navbar />
       <h1>My Clothes</h1>
+      <Navbar />
       <div className='clothes-container'>
         {currentClothes.map((clothe, index) => (
           <Link to={`/clothes/${index}`} key={index}>

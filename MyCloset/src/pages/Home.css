@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-image: url('../assets/backimg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 70px;
+    margin-left: 50px;
+    margin-bottom: 70px;
+    color: #464343;
+}
+select {
+    width: 300px;  /* 너비 설정 */
+    height: 40px;  /* 높이 설정 */
+    font-size: 20px;  /* 폰트 크기 설정 */
+    text-indent: 9px;  /* 왼쪽으로 9px 들여쓰기 */
+    margin-top: 13px;
+    margin-bottom: 20px;
+    
+}
+
+/* styles.css */
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh; /* 웹 페이지 전체 높이를 기준으로 설정 */
+  }
+  
+  .img-container img {
+    width: 25%;
+    height: 65%;
+  }
+  

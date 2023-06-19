@@ -1,8 +1,13 @@
 import React from 'react'
+import Navbar from '../components/Navbar/Navbar'
 
 function OuterClothes() {
   return (
-    <div>OuterClothes</div>
+    <div>
+      <h1>Outer Clothes</h1>
+      <Navbar />
+      
+      </div>
   )
 }
 

@@ -4,7 +4,7 @@ import { NavbarContainer, NavbarItem } from "./Navbar.style";
 
 function Navbar() {
   const navigate = useNavigate();
-
+  
   const initialState = [
     {
       id: 0,
@@ -12,6 +12,13 @@ function Navbar() {
       isHovered: false,
       imgUrl: "Navbar_icon_home.png",
       color: "#ff9b9b",
+    },
+    {
+      id: 4,
+      value: "myclothes",
+      isHovered: false,
+      imgUrl: "Navbar_icon_OOTD.png",
+      color: "#9DFF9B",
     },
     {
       id: 1,
@@ -34,20 +41,7 @@ function Navbar() {
       imgUrl: "Navbar_icon_outer.png",
       color: "#FFE99B",
     },
-    {
-      id: 4,
-      value: "ootd",
-      isHovered: false,
-      imgUrl: "Navbar_icon_OOTD.png",
-      color: "#9DFF9B",
-    },
-    {
-      id: 5,
-      value: "about",
-      isHovered: false,
-      imgUrl: "Navbar_icon_about.png",
-      color: "#FF9BFF",
-    },
+  
   ];
 
   const handleClick = (path) => {
