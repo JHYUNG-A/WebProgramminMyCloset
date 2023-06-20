@@ -41,13 +41,13 @@ function OOTD() {
           </Link>
         ))}
       </div>
-      <div className='button-container'>
+      <div className='add-button-container'>
         <button onClick={handlePrevious}>Previous</button>
         <button onClick={handleNext}>Next</button>
       </div>
 
       <Link to="/add-ootd">
-        <button>Add OOTD</button>
+        <button className='fault'>Add OOTD</button>
       </Link>
 
     </div>
