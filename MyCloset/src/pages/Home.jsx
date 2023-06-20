@@ -1,14 +1,14 @@
 import React from 'react';
 import './Home.css';
 
-import { Outlet, Link, useNavigate} from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 
 import  Mainbar from '../components/Mainbar/Mainbar'
 import meeting from '../assets/Meeting.png';
 
 
 
-function Home() {
+const Home = () => {
 
   const navigate = useNavigate();
 

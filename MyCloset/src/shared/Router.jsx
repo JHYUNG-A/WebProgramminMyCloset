@@ -1,9 +1,6 @@
 import {
   createBrowserRouter,
-  createRoutesFromElements,
-  Route,
 } from 'react-router-dom';
-import Root from '../pages/Root';
 import NotFound from '../pages/NotFound';
 import Home from '../pages/Home';
 import TopClothes from '../pages/TopClothes'; // 상의 페이지
@@ -15,7 +12,7 @@ import ClothesDetail from '../pages/ClothesDetail'; // 내 옷 상세 페이지
 import WeatherRecommend from '../pages/WeatherRecommend'; // 날씨별 옷차림 추천 페이지
 import MyClothes from '../pages/MyClothes';
 import Proposal from '../pages/Proposal';
-//import AddOOTD from '../pages/AddOOTD';
+import AddOOTD from '../pages/AddOOTD';
 
 const Router = createBrowserRouter([
   {
@@ -59,10 +56,10 @@ const Router = createBrowserRouter([
     path: "/proposal",
     element: <Proposal />,
   },
-  // {
-  //   path: "/addootd",
-  //   element: <AddOOTD />,
-  // },
+  {
+    path: "/add-ootd",
+    element: <AddOOTD />,
+  },
 ]);
 
 export default Router;

@@ -5,7 +5,7 @@ import './MyClothes.css';
 function TopClothes() {
   const [topClothes, setTopClothes] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 16;
+  const itemsPerPage = 8;
 
   useEffect(() => {
     const allClothes = JSON.parse(localStorage.getItem('clothes')) || [];
