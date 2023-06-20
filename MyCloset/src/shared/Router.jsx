@@ -13,6 +13,8 @@ import WeatherRecommend from '../pages/WeatherRecommend'; // 날씨별 옷차림
 import MyClothes from '../pages/MyClothes';
 import Proposal from '../pages/Proposal';
 import AddOOTD from '../pages/AddOOTD';
+import OOTDDetail from '../pages/OOTDDetail';
+import EditOOTD from '../pages/EditOOTD';
 
 const Router = createBrowserRouter([
   {
@@ -59,6 +61,14 @@ const Router = createBrowserRouter([
   {
     path: "/add-ootd",
     element: <AddOOTD />,
+  },
+  {
+    path: "/ootd/:id",
+    element: <OOTDDetail />,
+  },
+  {
+    path: "/edit-ootd/:id",
+    element: <EditOOTD />,
   },
 ]);
 

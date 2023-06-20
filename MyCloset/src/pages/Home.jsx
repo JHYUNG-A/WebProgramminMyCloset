@@ -1,14 +1,14 @@
 import React from 'react';
 import './Home.css';
 
-import { useNavigate} from 'react-router-dom';
+import { Outlet, Link, useNavigate } from 'react-router-dom';
 
-import  Mainbar from '../components/Mainbar/Mainbar'
+import Mainbar from '../components/Mainbar/Mainbar'
 import meeting from '../assets/Meeting.png';
 
 
 
-const Home = () => {
+function Home() {
 
   const navigate = useNavigate();
 
@@ -22,7 +22,7 @@ const Home = () => {
     <div>
       <h1>Project Home</h1>
       <nav>
-      <Mainbar />
+        <Mainbar />
         {/* <ul>
           <select onChange={handleChange}>
             <option value="">내 옷 카테고리</option>
