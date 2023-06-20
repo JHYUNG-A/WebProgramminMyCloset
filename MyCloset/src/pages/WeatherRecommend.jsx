@@ -23,6 +23,7 @@ function WeatherRecommend() {
 
   return (
     <div>
+      <h1>Weather Recommendation</h1>
       <Navbar />
       <Weather onTemperatureChange={handleTemperatureChange} />
       <ClothesContainer>
