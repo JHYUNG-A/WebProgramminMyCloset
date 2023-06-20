@@ -12,14 +12,14 @@ function About() {
       major: '전자전기공학부',
       id: '2017112020',
       image: image1,
-      role: 'Frontend Developer',
+      role: '메인페이지, Proposal, 전체 디자인',
     },
     {
       name: '김준하',
       major: '컴퓨터공학과',
       id: '2017112292',
       image: image2,
-      role: 'Backend Developer',
+      role: '내 옷장 페이지(전체, 상의, 하의, 아우터), OOTD(전체, 상세, 추가, 수정)',
     },
     {
       name: '김광민',
