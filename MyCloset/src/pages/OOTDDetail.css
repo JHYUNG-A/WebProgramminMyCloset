@@ -1,0 +1,43 @@
+/* OOTDDetail.css */
+
+.ootd-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.ootd-images {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    max-height: 80vh;
+}
+
+.ootd-images img {
+    max-width: 24%;
+    height: auto;
+}
+
+.ootd-actions {
+    display: flex;
+    width: 95%;
+}
+
+.back-button {
+    display: flex;
+    align-items: left;
+}
+
+.buttons {
+    display: flex;
+    align-items: right;
+}
+
+.ootd-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    margin-left: 200px;
+}

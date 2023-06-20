@@ -4,6 +4,9 @@ import Mainbar from '../components/Mainbar/Mainbar';
 
 function EditOOTD() {
   const [ootd, setOotd] = useState({
+    title: '',
+    date: '',
+    description: '',
     fullImage: '',
     topImage: '',
     bottomImage: '',
@@ -50,6 +53,27 @@ function EditOOTD() {
       <h1>Edit OOTD</h1>
       <Mainbar />
       <form onSubmit={handleSubmit} className='ootd-form'>
+        <input 
+          className='input-field' 
+          name="title" 
+          placeholder="Title" 
+          onChange={handleChange} 
+          value={ootd.title}
+        />
+        <input 
+          className='input-field' 
+          name="date" 
+          placeholder="Date" 
+          onChange={handleChange} 
+          value={ootd.date}
+        />
+        <textarea 
+          className='input-field' 
+          name="description" 
+          placeholder="Description" 
+          onChange={handleChange} 
+          value={ootd.description}
+        />
         <input 
           className='input-field' 
           name="fullImage" 

@@ -10,6 +10,10 @@
   object-fit: cover;
 }
 
+.clothes-container p {
+  text-align: center;
+}
+
 .form-container {
   width: 80%;
   margin: 0 auto;

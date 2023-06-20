@@ -12,6 +12,10 @@
   object-fit: cover;
 }
 
+.ootd-container p {
+  text-align: center;
+}
+
 .ootd-container>a {
   flex: 0 0 calc(25% - 1em);
   margin-bottom: 1em;
