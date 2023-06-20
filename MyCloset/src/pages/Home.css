@@ -3,7 +3,7 @@
 body {
     background-image: url('../assets/backimg.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center center;
 }
 h1 {
@@ -11,6 +11,14 @@ h1 {
     font-size: 70px;
     margin-left: 50px;
     margin-bottom: 70px;
+    color: #464343;
+}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 45px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    margin-top: 60px;
     color: #464343;
 }
 select {
