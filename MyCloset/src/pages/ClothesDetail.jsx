@@ -9,6 +9,7 @@ import { DetailContainer, DetailWrapper, ButtonContainer, StyledButton } from '.
 
 function ClothesDetail() {
   const { id } = useParams();
+  const numericId = Number(id);
   const navigate = useNavigate();
   const clothes = JSON.parse(localStorage.getItem("clothes"));
   const item = clothes[id];
@@ -28,7 +29,7 @@ function ClothesDetail() {
 
   const handleDelete = () => {
     if (window.confirm("정말로 삭제하시겠습니까?")) {
-      const updatedClothes = clothes.filter((_, index) => index !== id);
+      const updatedClothes = clothes.filter((_, index) => index !== numericId);
       localStorage.setItem("clothes", JSON.stringify(updatedClothes));
       navigate("/");
     }
