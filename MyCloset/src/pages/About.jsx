@@ -10,23 +10,23 @@ function About() {
     {
       name: '안재형',
       major: '전자전기공학부',
-      id: '20210001',
+      id: '2017112020',
       image: image1,
       role: 'Frontend Developer',
     },
     {
       name: '김준하',
       major: '컴퓨터공학과',
-      id: '20210002',
+      id: '2017112292',
       image: image2,
       role: 'Backend Developer',
     },
     {
       name: '김광민',
       major: '멀티미디어공학과',
-      id: '20210003',
+      id: '2018112540',
       image: image3,
-      role: 'Full Stack Developer',
+      role: '내 옷 상세 페이지, 날씨별 옷차림 추천 페이지',
     },
   ];
 
