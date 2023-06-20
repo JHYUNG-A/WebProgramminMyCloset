@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from '../components/Navbar/Navbar'
 import './MyClothes.css';
+import { Link } from 'react-router-dom';
 
 function TopClothes() {
   const [topClothes, setTopClothes] = useState([]);
@@ -29,14 +30,16 @@ function TopClothes() {
     <div>
       <h1>Top Clothes</h1>
       <Navbar />
-      <br/>
+      <br />
       <div className='clothes-container'>
         {currentClothes.map((clothe, index) => (
-          <div key={index}>
-            <img src={clothe.image} alt={clothe.name} />
-            <h2>{clothe.name}</h2>
-            <p>{clothe.price}</p>
-          </div>
+          // <Link to={`/clothes/${index}`} key={index}>
+            <div key={index}>
+              <img src={clothe.image} alt={clothe.name} />
+              <p>{clothe.name}</p>
+              <p>{clothe.price}</p>
+            </div>
+          // </Link>
         ))}
       </div>
 

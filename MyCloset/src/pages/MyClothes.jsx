@@ -65,7 +65,7 @@ function MyClothes() {
           <Link to={`/clothes/${index}`} key={index}>
             <div key={index}>
               <img src={clothe.image} alt={clothe.name} />
-              <h2>{clothe.name}</h2>
+              <p>{clothe.name}</p>
               <p>{clothe.price}</p>
             </div>
           </Link>

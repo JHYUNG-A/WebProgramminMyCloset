@@ -35,7 +35,8 @@ function OOTD() {
           <Link to={`/ootd/${index}`} key={index}>
             <div key={index}>
               <img src={ootd.fullImage} alt={ootd.title} />
-              <h2>{ootd.title}</h2>
+              <p>{ootd.title}</p>
+              <p>{ootd.date}</p>
             </div>
           </Link>
         ))}
