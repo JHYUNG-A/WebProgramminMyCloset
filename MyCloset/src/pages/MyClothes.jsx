@@ -71,9 +71,14 @@ function MyClothes() {
           </Link>
         ))}
       </div>
-      <div className='button-container'>
+      {/* <div className='button-container'>
         <button onClick={handlePrevious}>Previous</button>
         <button onClick={handleNext}>Next</button>
+      </div> */}
+
+      <div className='add-button-container'>
+        <button className='add-button' onClick={handlePrevious}>Previous</button>
+        <button className='add-button' onClick={handleNext}>Next</button>
       </div>
 
       <h2>Add Clothes</h2>
