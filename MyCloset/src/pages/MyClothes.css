@@ -66,3 +66,9 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+.add-button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
