@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './AddOOTD.css';
 import Mainbar from '../components/Mainbar/Mainbar';
 
@@ -11,7 +11,7 @@ function AddOOTD() {
     outerImage: ''
   });
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleChange = (event) => {
     setOotd({
@@ -26,11 +26,11 @@ function AddOOTD() {
     storedOotds.push(ootd);
     localStorage.setItem('ootds', JSON.stringify(storedOotds));
     alert('OOTD added!');
-    history.push('/ootd');
+    navigate('/ootd');
   };
 
   const handleCancel = () => {
-    history.goBack();
+    navigate(-1);
   };
 
   return (

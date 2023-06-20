@@ -45,7 +45,7 @@ function OOTD() {
         <button onClick={handleNext}>Next</button>
       </div>
 
-      <Link to="/addootd">
+      <Link to="/add-ootd">
         <button>Add OOTD</button>
       </Link>
 
